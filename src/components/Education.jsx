@@ -3,51 +3,51 @@ import React from 'react';
 const educationData = [
   {
     period: "2021 - 2025",
-    degree: "Bachelor of Technology in Computer Engineering",
+    degree: "Bachelor of Technology in Electronics And Telecommunication Engineering ",
     institution: "MIT Academy of Engineering",
-    description: "Top 10% of the class. Specialized in Cyber Security. Completed multiple projects in web development.",
+    description: "Top 10% of the class. Specialized in Machine Learning. Completed multiple projects in Web Development, Machine Learning & IOT.",
     achievements: [
-      "CGPA: 9.2/10"
+      "CGPA: 8.64/10"
     ]
   },
   {
     period: "2019 - 2021",
     degree: "High Secondary School Certificate - HSC",
-    institution: "DMJC",
-    description: "Completed with 95% in Science stream. Participated in various science fairs and competitions.",
+    institution: "KES'S Prata College",
+    description: "Completed with 92% in Science stream. Participated in various science fairs and competitions.",
     achievements: [
-      "Percentage: 95.33%"
+      "Percentage: 91.83%"
     ]
   },
   {
     period: "2018 - 2019",
     degree: "Class 10th - SSC",
-    institution: "New English School",
+    institution: "KES'S G.S.High School",
     description: "Completed with 93% in SSC. Active participant in school tech fests and competitions.",
     achievements: [
-      "Percentage: 93.20%"
+      "Percentage: 93.40%"
     ]
   }
 ];
 
 const certifications = [
   {
-    year: "2024",
-    name: "Red Hat System Administration I (RH124)",
-    issuer: "Red Hat Training and Certification",
-    description: "Fundamentals of Linux system administration, including installation, configuration, and management."
-  },
-  {
-    year: "2024",
-    name: "Red Hat System Administration II (RH134)",
-    issuer: "Red Hat Training and Certification",
-    description: "Advanced Linux system administration skills, including networking and security."
+    year: "2023",
+    name: "Oracle Cloud Infrastructure - Foundation Associates ",
+    issuer: "Oracle Cloud Infrastructure ",
+    description: "Fundamentals of Cloud Infrastructure, including installation, configuration, and management."
   },
   {
     year: "2023",
-    name: "Core Java Programming",
-    issuer: "DMG Institute",
-    description: "In-depth knowledge of Java programming, including OOP concepts, collections, and exception handling."
+    name: "AWS Academy Graduate - AWS Academy Machine Learning Foundation",
+    issuer: "AWS Academy",
+    description: "Core ML concepts and workflows using AWS tools and services."
+  },  
+  {
+    year: "2024",
+    name: "NPTEL - Introduction to Industry 4.0 and Industrial Internet of Things ",
+    issuer: "NPTEL",
+    description: "Smart manufacturing concepts, IIoT technologies, and their role in modern industrial automation."
   }
 ];
 

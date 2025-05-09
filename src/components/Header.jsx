@@ -19,7 +19,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900 shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
-          Aditya.dev
+          Girish.dev
         </div>
 
         {/* Desktop Nav */}

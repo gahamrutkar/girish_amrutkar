@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const titles = [
   "Full Stack Developer",
-  "Automation QA",
+  "Cloud Enthsiast",
   "Tech Enthusiast",
-  "Cyber Security Enthusiast",
+  "Machine Learning Enthusiast",
 ];
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://i.ibb.co/ycny8S2G/aditya.png"
+              src="/myimage.jpg"
               alt="Profile"
               className="rounded-2xl shadow-2xl w-2/3 object-cover"
             />
@@ -37,11 +37,11 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-              👋 Hi, I'm <span className="text-blue-600">Aditya Dhamale</span>
+              👋 Hi, I'm <span className="text-blue-600">Girish Amrutkar</span>
             </h3>
 
             <p className="text-gray-600 mb-4 leading-relaxed">
-              I'm a versatile professional with a strong background in software development and quality assurance. I enjoy crafting full-stack applications, ensuring software quality through automation, and diving into the world of cybersecurity and emerging tech.
+              I'm a versatile professional with a strong background in software development. I enjoy crafting full-stack applications, ensuring software quality through automation, and diving into the world of cybersecurity and emerging tech.
             </p>
 
             <p className="text-gray-600 mb-6">

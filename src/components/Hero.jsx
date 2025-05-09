@@ -9,9 +9,9 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const roles = [
     "Full Stack Developer",
-    "Automation QA",
+    "Cloud Enthusiast",
     "Tech Enthusiast",
-    "Cyber Security Enthusiast",
+    "Machine Learing  Enthusiast",
   ];
   const typingSpeed = 100;
   const deletingSpeed = 50;
@@ -82,7 +82,7 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="text-blue-400 relative">
-              Aditya Dhamale
+              Girish Amrutkar
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </span>
           </h1>
@@ -117,7 +117,7 @@ const Hero = () => {
             }`}
           >
             <a
-              href="https://shorturl.at/lYu9g"
+              href="https://drive.google.com/file/d/1FoT-r5aQOzQSj8O25xaYPUSU3x4Kw0xL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-transparent hover:bg-white/10 border border-white text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center"
@@ -150,7 +150,7 @@ const Hero = () => {
           >
             {/* GitHub */}
             <a
-              href="https://github.com/adix2326"
+              href="https://github.com/gahamrutkar"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transform hover:scale-110 transition-all duration-300"
@@ -174,7 +174,7 @@ const Hero = () => {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/adityadhamale2326"
+              href="https://www.linkedin.com/in/girish-amrutkar-5a6b25245/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transform hover:scale-110 transition-all duration-300"
@@ -194,7 +194,7 @@ const Hero = () => {
 
             {/* LeetCode */}
             <a
-              href="https://leetcode.com/u/skad_2326"
+              href="https://leetcode.com/u/Girishamrutkar/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transform hover:scale-110 transition-all duration-300"

@@ -1,63 +1,64 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 
 const projects = [
   {
     id: 1,
-    title: "Hostel Management System",
+    title: "AIDAS: AI-Based Intelligent Driver Assistance System",
     description:
-      "A web app to manage hostel operations like room allocation, billing, and student management.",
-    image: "https://via.placeholder.com/800x600",
-    tech: ["React", "TailwindCSS", "MySQL", "Java"],
-    category: "web",
+      "This project focuses on building an AI-powered driver-assistance system aimed at enhancing road safety and efficiency.",
+    image: "/image1.png",
+    tech: ["YOLO", "AI", "Cloud"],
+    category: "AI",
   },
   {
     id: 2,
-    title: "Academic ERP Portal",
+    title: "Smart Student Assessment and Recommendation System Using Machine Learning",
     description:
-      "Secure registration/login with Captcha, course registration, attendance upload, OTP and email notifications.",
-    image: "https://via.placeholder.com/800x600",
-    tech: ["HTML", "CSS", "Javascript", "Java", "Spring Boot", "MySQL"],
-    category: "web",
+      "EduTracker is a web-based platform that assesses student performance and offers personalized learning recommendations using machine learning.",
+    image: "/image2.png",
+    tech: ["React.js", "Mongo DB", "Express.JS", "HTML", "CSS"],
+    category: "Website",
   },
   {
     id: 3,
-    title: "Image Encryption in Python",
+    title: "Email Spam Detection Using Machine Learning and NLP",
     description:
-      "Encrypt and decrypt images using DES algorithm with password protection using Python Tkinter.",
-    image: "https://via.placeholder.com/800x600",
-    tech: ["Python", "Tkinter", "Cryptography"],
-    category: "desktop",
+      "SmartMail is a machine learning-based email spam classifier that distinguishes spam from legitimate emails using natural language processing techniques.",
+    image: "/image3.png",
+    tech: ["XG Boost", "NLP Algorithm", "Machine Learning"],
+    category: "Website",
   },
   {
     id: 4,
-    title: "Class Photo Attendance System",
+    title: "Automated Onboarding Form Processing System",
     description:
-      "A smart attendance system using image processing with Flask backend and Firebase integration.",
-    image: "https://via.placeholder.com/800x600",
-    tech: ["Python", "Flask", "Flutter", "Firebase"],
-    category: "ai",
+      "The Automated Onboarding Form Processing System aims to streamline the process of managing and processing onboarding forms by automating data extraction, validation, and integration.",
+    image: "/image.png",
+    tech: ["Flask", "Fitz", "My SQL"],
+    category: "Website",
   },
 ];
 
 const Projects = () => {
-  const [filter, setFilter] = useState("all");
-
-  const filteredProjects =
-    filter === "all"
-      ? projects
-      : projects.filter((project) => project.category === filter);
+  const sliderRef = useRef(null);
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    pauseOnHover: true,
     arrows: false,
+    autoplay: false,
+  };
+
+  const handlePrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const handleNext = () => {
+    sliderRef.current.slickNext();
   };
 
   return (
@@ -70,15 +71,29 @@ const Projects = () => {
           My Projects
         </h2>
 
-        <div className="flex items-center justify-center">
+        <div className="relative flex items-center justify-center">
+          {/* Left Arrow */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-[-30px] sm:left-[-50px] text-white bg-blue-600 hover:bg-blue-700 p-3 rounded-full z-10 shadow-md"
+          >
+            ⟵
+          </button>
+
+          {/* Slider */}
           <div className="w-full max-w-4xl">
-            <Slider {...settings}>
-              {filteredProjects.map((project) => (
+            <Slider ref={sliderRef} {...settings}>
+              {projects.map((project) => (
                 <div
                   key={project.id}
                   className="flex items-center justify-center h-full text-center"
                 >
                   <div className="bg-gray-800 rounded-3xl shadow-lg p-8 sm:p-10 w-full transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full max-h-80 object-cover rounded-xl mb-6 shadow-md"
+                    />
                     <h3 className="text-2xl sm:text-3xl font-semibold text-blue-300 mb-4">
                       {project.title}
                     </h3>
@@ -100,6 +115,14 @@ const Projects = () => {
               ))}
             </Slider>
           </div>
+
+          {/* Right Arrow */}
+          <button
+            onClick={handleNext}
+            className="absolute right-[-30px] sm:right-[-50px] text-white bg-blue-600 hover:bg-blue-700 p-3 rounded-full z-10 shadow-md"
+          >
+            ⟶
+          </button>
         </div>
       </div>
     </section>

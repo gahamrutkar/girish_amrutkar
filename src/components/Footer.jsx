@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Aditya Dhamale</h3>
+            <h3 className="text-xl font-semibold mb-4">Girish Amrutkar</h3>
             {/* <p className="text-gray-400 mb-4">
               Full Stack Developer specializing in modern web technologies,
               focused on creating efficient and user-friendly digital experiences.
@@ -75,7 +75,7 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex space-x-4 mb-6">
               <a 
-                href="https://github.com/adix2326" 
+                href="https://github.com/gahamrutkar" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center transition-colors"
@@ -85,7 +85,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="https://linkedin.com/in/adityadhamale2326" 
+                href="https://www.linkedin.com/in/girish-amrutkar-5a6b25245/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center transition-colors"
@@ -95,7 +95,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="https://instagram.com/__thesun.36" 
+                href="https://instagram.com/girishamrutkar_5103" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center transition-colors"
@@ -112,14 +112,14 @@ const Footer = () => {
                 <svg className="w-5 h-5 mt-0.5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-gray-400">adityadhamale36@gmail.com</span>
+                <span className="text-gray-400">girish.amrutkar@mitaoe.ac.in</span>
               </div>
               
               <div className="flex items-start">
                 <svg className="w-5 h-5 mt-0.5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-gray-400">+91 9689104033</span>
+                <span className="text-gray-400">+91 9503007889</span>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Aditya Dhamale. All rights reserved.
+            © {currentYear} Girish Amrutkar. All rights reserved.
           </p>
           <p className="text-gray-500 text-xs mt-2">
             Designed & Built with React and Tailwind CSS

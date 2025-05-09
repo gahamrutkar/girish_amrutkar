@@ -15,8 +15,7 @@ const techSkills = [
   { name: "Java", icon: <FaJava className="text-4xl text-orange-700" /> },
   { name: "Python", icon: <FaPython className="text-4xl text-yellow-500" /> },
   { name: "DBMS", icon: <FaDatabase className="text-4xl text-purple-600" /> },
-  { name: "Computer Networks", icon: <MdComputer className="text-4xl text-green-700" /> },
-  { name: "Software Engineering", icon: <BsCodeSlash className="text-4xl text-gray-600" /> },
+ 
   {
     name: "HTML/CSS",
     icon: (
@@ -32,8 +31,7 @@ const techSkills = [
   { name: "MySQL", icon: <SiMysql className="text-4xl text-blue-700" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-4xl text-green-600" /> },
   { name: "DSA", icon: <PiGraphFill className="text-4xl text-indigo-700" /> },
-  { name: "Linux", icon: <FaLinux className="text-4xl text-black" /> },
-];
+];  
 
 const repeatedSkills = [...techSkills, ...techSkills];
 
